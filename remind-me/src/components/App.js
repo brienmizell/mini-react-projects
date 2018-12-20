@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
     this.state = {
       text: "",
-      dueDate: ""
+      dueDate: "",
+      reminders: []
     };
   }
 
@@ -22,7 +23,8 @@ class App extends Component {
   }
 
   renderReminders() {
-    const { reminders } = this.props;
+    const { reminders } = this.state;
+    console.log(this.state);
     return (
       <ul className="list-group col-sm-4">
         {reminders.map(reminder => {
