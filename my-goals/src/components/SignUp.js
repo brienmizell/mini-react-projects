@@ -17,18 +17,19 @@ class SignUp extends Component {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .catch(error => {
-        console.log("error", error);
+        this.setState({ error });
       });
   }
 
   render() {
     return (
-      <div className="form-inline">
+      <div className="form-inline" style={{ margin: "5%" }}>
         <h2>Sign Up</h2>
         <div className="form-group">
           <input
             className="form-control"
             type="text"
+            style={{ marginRight: "5px" }}
             placeholder="email"
             onChange={event => this.setState({ email: event.target.value })}
           />
@@ -47,6 +48,7 @@ class SignUp extends Component {
             Sign Up
           </button>
         </div>
+        <div>{this.state.error.message}</div>
       </div>
     );
   }
