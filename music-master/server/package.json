@@ -12,10 +12,7 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "start": "npm start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm start"
   },
   "eslintConfig": {
     "extends": "react-app"
