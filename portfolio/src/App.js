@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-class RegularClass {}
-class ComponentClass extends Component {}
-
 class App extends Component {
   constructor() {
     super();
@@ -10,9 +7,7 @@ class App extends Component {
 
     this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
   }
-  readMore() {
-    this.setState({ displayBio: true });
-  }
+
   toggleDisplayBio() {
     this.setState({ displayBio: !this.state.displayBio });
   }
