@@ -26051,7 +26051,7 @@ function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "animateTitles", function () {
-      setInterval(function () {
+      _this.titleInterval = setInterval(function () {
         var titleIndex = (_this.state.titleIndex + 1) % TITLES.length;
 
         _this.setState({
@@ -26068,6 +26068,11 @@ function (_Component) {
     value: function componentDidMount() {
       console.log("Title componenet has mounted");
       this.animateTitles();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      clearInterval(this.titleInterval);
     }
   }, {
     key: "render",
