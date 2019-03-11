@@ -25755,99 +25755,44 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _projects = _interopRequireDefault(require("../data/projects"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Project =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Project, _Component);
-
-  function Project() {
-    _classCallCheck(this, Project);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Project).apply(this, arguments));
-  }
-
-  _createClass(Project, [{
-    key: "render",
-    value: function render() {
-      console.log("this.props", this.props);
-      var _this$props$project = this.props.project,
-          title = _this$props$project.title,
-          image = _this$props$project.image,
-          description = _this$props$project.description,
-          link = _this$props$project.link;
-      return _react.default.createElement("div", {
-        style: {
-          display: "inline-block",
-          width: 300,
-          margin: 10
-        }
-      }, _react.default.createElement("h3", null, title), _react.default.createElement("img", {
-        src: image,
-        alt: "profile",
-        style: {
-          width: 200,
-          height: 120
-        }
-      }), _react.default.createElement("p", null, description), _react.default.createElement("a", {
-        href: link
-      }, link));
+var Project = function Project(props) {
+  var _props$project = props.project,
+      title = _props$project.title,
+      image = _props$project.image,
+      description = _props$project.description,
+      link = _props$project.link;
+  return _react.default.createElement("div", {
+    style: {
+      display: "inline-block",
+      width: 300,
+      margin: 10
     }
-  }]);
-
-  return Project;
-}(_react.Component);
-
-var Projects =
-/*#__PURE__*/
-function (_Component2) {
-  _inherits(Projects, _Component2);
-
-  function Projects() {
-    _classCallCheck(this, Projects);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Projects).apply(this, arguments));
-  }
-
-  _createClass(Projects, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Highlighted Projects"), _react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
-        return _react.default.createElement(Project, {
-          key: PROJECT.id,
-          project: PROJECT
-        });
-      })));
+  }, _react.default.createElement("h3", null, title), _react.default.createElement("img", {
+    src: image,
+    alt: "profile",
+    style: {
+      width: 200,
+      height: 120
     }
-  }]);
+  }), _react.default.createElement("p", null, description), _react.default.createElement("a", {
+    href: link
+  }, link));
+};
 
-  return Projects;
-}(_react.Component);
+var Projects = function Projects() {
+  return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Highlighted Projects"), _react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
+    return _react.default.createElement(Project, {
+      key: PROJECT.id,
+      project: PROJECT
+    });
+  })));
+};
 
 var _default = Projects;
 exports.default = _default;
@@ -25904,91 +25849,37 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _socialProfiles = _interopRequireDefault(require("../data/socialProfiles"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var SocialProfile =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(SocialProfile, _Component);
-
-  function SocialProfile() {
-    _classCallCheck(this, SocialProfile);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(SocialProfile).apply(this, arguments));
-  }
-
-  _createClass(SocialProfile, [{
-    key: "render",
-    value: function render() {
-      var _this$props$socialPro = this.props.socialProfile,
-          link = _this$props$socialPro.link,
-          image = _this$props$socialPro.image;
-      return _react.default.createElement("span", null, _react.default.createElement("a", {
-        href: link
-      }, _react.default.createElement("img", {
-        src: image,
-        alt: "social-profile",
-        style: {
-          width: 35,
-          height: 35,
-          margin: 10
-        }
-      })));
+var SocialProfile = function SocialProfile(props) {
+  var _props$socialProfile = props.socialProfile,
+      link = _props$socialProfile.link,
+      image = _props$socialProfile.image;
+  return _react.default.createElement("span", null, _react.default.createElement("a", {
+    href: link
+  }, _react.default.createElement("img", {
+    src: image,
+    alt: "social-profile",
+    style: {
+      width: 35,
+      height: 35,
+      margin: 10
     }
-  }]);
+  })));
+};
 
-  return SocialProfile;
-}(_react.Component);
-
-var SocialProfiles =
-/*#__PURE__*/
-function (_Component2) {
-  _inherits(SocialProfiles, _Component2);
-
-  function SocialProfiles() {
-    _classCallCheck(this, SocialProfiles);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(SocialProfiles).apply(this, arguments));
-  }
-
-  _createClass(SocialProfiles, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Connect with me!"), _react.default.createElement("div", null, _socialProfiles.default.map(function (SOCIAL_PROFILE) {
-        return _react.default.createElement(SocialProfile, {
-          key: SOCIAL_PROFILE.id,
-          socialProfile: SOCIAL_PROFILE
-        });
-      })));
-    }
-  }]);
-
-  return SocialProfiles;
-}(_react.Component);
+var SocialProfiles = function SocialProfiles() {
+  return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Connect with me!"), _react.default.createElement("div", null, _socialProfiles.default.map(function (SOCIAL_PROFILE) {
+    return _react.default.createElement(SocialProfile, {
+      key: SOCIAL_PROFILE.id,
+      socialProfile: SOCIAL_PROFILE
+    });
+  })));
+};
 
 var _default = SocialProfiles;
 exports.default = _default;
