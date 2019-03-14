@@ -25972,7 +25972,6 @@ function (_Component) {
           fadeIn: false
         });
       }, 2000);
-      console.log("Title componenet has mounted");
       this.animateTitles();
     }
   }, {
@@ -26072,6 +26071,8 @@ function (_Component) {
         return _this.setState({
           jokes: json
         });
+      }).catch(function (error) {
+        return alert(error.message);
       });
     });
 
@@ -26089,6 +26090,8 @@ function (_Component) {
         return _this2.setState({
           joke: json
         });
+      }).catch(function (error) {
+        return alert(error.message);
       });
     }
   }, {
