@@ -12,7 +12,6 @@ class Title extends Component {
 
   componentDidMount() {
     this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
-    console.log("Title componenet has mounted");
 
     this.animateTitles();
   }
