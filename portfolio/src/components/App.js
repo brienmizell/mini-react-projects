@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import face from "../assets/face.png";
 import Title from "./Title";
+import Header from "./Header";
 
 class App extends Component {
   state = { displayBio: false };
@@ -13,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <img src={face} alt="face" className="face" />
         <h1>Hello!</h1>
         <p>My name is Brien.</p>
