@@ -8,6 +8,10 @@ const API_ADDRESS = "https://spotify-api-wrapper.appspot.com";
 class App extends Component {
   state = { artist: null, tracks: [] };
 
+  componentDidMount() {
+    this.searchArtist("Daft Punk");
+  }
+
   updateArtistQuery = () => {
     this.setState({ artistQuery: event.target.value });
   };
