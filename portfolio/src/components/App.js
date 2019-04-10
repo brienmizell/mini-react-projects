@@ -22,7 +22,7 @@ class App extends Component {
           <div>
             <p>I live in Decatur, GA. I code every day.</p>
             <p>
-              My favoirte language is JavaScript, and I think React.js is
+              My favorite language is JavaScript, and I think React.js is
               awesome.
             </p>
             <p>Besides coding, I also love music, beer, sports and ramen!</p>

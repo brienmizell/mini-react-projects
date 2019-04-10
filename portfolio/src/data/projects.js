@@ -5,26 +5,28 @@ import project3 from "../assets/project3.png";
 const PROJECTS = [
   {
     id: 1,
-    title: "Example React Application",
+    title: "dragonStack",
     description:
-      "A React App that I built, involving JS and core web dev concepts!",
-    link: "https://github.com",
+      "dragonStack is a full-stack web application with both a backend and a frontend. It uses Node.js, Express.js, and PostgreSQL on the backend to create a server, API, and manage the database. For the frontend, dragonStack uses React.js, Redux, and various JavaScript modules.",
+    link: "https://github.com/brienmizell/dragonStack",
     image: project1
   },
   {
     id: 2,
-    title: "My API",
-    description:
-      "A REST API that I built from scratch with GET and POST requests!",
-    link: "https://github.com",
+    title: "Polifactual",
+    description: `Polifactual is a web application that informs users on their local, state, and national legislative representatives.
+
+      By taking a users address and zipcode, our application can pull in information from the Google Civic Information API to display local, state, and national reps information for the user. National(of course) will be the same for every user.`,
+    link: "https://github.com/brienmizell/Polifactual",
     image: project2
   },
   {
     id: 3,
-    title: "Operation Systems Final Project",
-    description:
-      "My unique final project for my university Operating Systems Course.",
-    link: "https://github.com",
+    title: "Collection of React projects",
+    description: `A collection of various React projects I have worked on, or I am in the process of working on.
+
+      Each folder has its readme about that project.`,
+    link: "https://github.com/brienmizell/mini-react-projects",
     image: project3
   }
 ];
