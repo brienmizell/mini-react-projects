@@ -6,7 +6,8 @@ import App from "./components/App";
 import Jokes from "./components/Jokes";
 import MusicMaster from "./projects/music-master";
 import DateCountdown from "./projects/date-countdown";
-import RemindMe from "./projects/remind-me";
+import Polifactual from "./projects/polifactual/client/src";
+import PoliTeam from "./projects/polifactual/client/src/components/Team";
 import Header from "./components/Header";
 import "./index.css";
 
@@ -46,14 +47,22 @@ ReactDOM.render(
           </Header>
         )}
       />
-      {/* <Route
-        path="/remind-me"
+      <Route
+        path="/polifactual"
         render={() => (
           <Header>
-            <RemindMe />
+            <Polifactual />
           </Header>
         )}
-      /> */}
+      />
+      <Route
+        path="/team"
+        render={() => (
+          <Header>
+            <PoliTeam />
+          </Header>
+        )}
+      />
     </Switch>
   </Router>,
   document.getElementById("root")
