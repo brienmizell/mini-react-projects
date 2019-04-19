@@ -5,6 +5,8 @@ import createBrowserHistory from "history/createBrowserHistory";
 import App from "./components/App";
 import Jokes from "./components/Jokes";
 import MusicMaster from "./projects/music-master";
+import DateCountdown from "./projects/date-countdown";
+import RemindMe from "./projects/remind-me";
 import Header from "./components/Header";
 import "./index.css";
 
@@ -33,6 +35,22 @@ ReactDOM.render(
         render={() => (
           <Header>
             <MusicMaster />
+          </Header>
+        )}
+      />
+      <Route
+        path="/date-countdown"
+        render={() => (
+          <Header>
+            <DateCountdown />
+          </Header>
+        )}
+      />
+      <Route
+        path="/remind-me"
+        render={() => (
+          <Header>
+            <RemindMe />
           </Header>
         )}
       />

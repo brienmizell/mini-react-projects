@@ -1,6 +1,6 @@
 @font-face {
   font-family: RobotoCondensed;
-  src: url(../../roboto-condensed.light.dc1ca484.ttf);
+  src: url(/roboto-condensed.light.dc1ca484.ttf);
   font-weight: 800;
 }
 @font-face {
@@ -59,9 +59,32 @@ h5 {
   opacity: 0.8;
 }
 
+.App {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20%;
+}
+
+.App-title {
+  font-size: 50px;
+}
+
+.Clock-days,
+.Clock-hours,
+.Clock-minutes,
+.Clock-seconds {
+  display: inline;
+  margin: 10px;
+}
+
+.Deadline-input {
+  font-size: 25px;
+  margin: 5px;
+}
+
 @font-face {
   font-family: RobotoCondensed;
-  src: url(roboto-condensed.light.6709adf4.ttf);
+  src: url(/roboto-condensed.light.6709adf4.ttf);
   font-weight: 800;
 }
 @font-face {
