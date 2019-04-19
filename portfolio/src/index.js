@@ -46,14 +46,14 @@ ReactDOM.render(
           </Header>
         )}
       />
-      <Route
+      {/* <Route
         path="/remind-me"
         render={() => (
           <Header>
             <RemindMe />
           </Header>
         )}
-      />
+      /> */}
     </Switch>
   </Router>,
   document.getElementById("root")

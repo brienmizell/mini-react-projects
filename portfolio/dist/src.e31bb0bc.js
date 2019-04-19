@@ -115253,11 +115253,7 @@ var Header = function Header(_ref) {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/date-countdown"
-  }, "Date Countdown")), _react.default.createElement("h3", {
-    style: style
-  }, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/remind-me"
-  }, "Remind Me"))), children);
+  }, "Date Countdown"))), children);
 };
 
 var _default = Header;
