@@ -1,0 +1,39 @@
+{
+  "name": "polifactual",
+  "version": "1.0.0",
+  "description": "Project still in process.",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect-brk index.js",
+    "dev": "nodemon index.js",
+    "reset-db": "dropdb polifactual; createdb polifactual; psql -f schema.sql polifactual; psql -f seed.sql polifactual; psql polifactual < node_modules/connect-pg-simple/table.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hharris0803/Photo_Widget.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hharris0803/Photo_Widget/issues"
+  },
+  "homepage": "https://github.com/hharris0803/Photo_Widget#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "connect-pg-simple": "^5.0.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "pg-promise": "^8.5.2",
+    "slider-before-after": "^1.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

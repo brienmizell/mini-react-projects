@@ -20,7 +20,7 @@ const Header = ({ children }) => {
           <Link to="/music-master">Music Master</Link>
         </h3>
         <h3 style={style}>
-          <Link to="/date-countdown">Date Countdown</Link>
+          <Link to="/polifactual">Polifactual</Link>
         </h3>
       </div>
       {children}

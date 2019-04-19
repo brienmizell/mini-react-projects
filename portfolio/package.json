@@ -9,15 +9,21 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "axios": "^0.18.0",
+    "bootstrap-css-only": "^4.3.1",
     "firebase": "^5.10.0",
+    "font-awesome": "^4.7.0",
     "history": "^4.9.0",
     "live-server": "^1.2.1",
+    "material-ui": "^0.20.2",
+    "mdbreact": "^4.13.0",
     "node": "^11.13.0",
     "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-twitter-widgets": "^1.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3"
