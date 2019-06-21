@@ -98175,6 +98175,8 @@ var _src = _interopRequireDefault(require("./projects/polifactual/client/src"));
 
 var _Team = _interopRequireDefault(require("./projects/polifactual/client/src/components/Team"));
 
+var _NationalComponent = _interopRequireDefault(require("./projects/polifactual/client/src/components/NationalComponent"));
+
 var _Header = _interopRequireDefault(require("./components/Header"));
 
 require("./index.css");
@@ -98214,8 +98216,13 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
   render: function render() {
     return _react.default.createElement(_Header.default, null, _react.default.createElement(_Team.default, null));
   }
+}), _react.default.createElement(_reactRouterDom.Route, {
+  path: "/National",
+  render: function render() {
+    return _react.default.createElement(_Header.default, null, _react.default.createElement(_NationalComponent.default, null));
+  }
 }))), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./projects/music-master":"projects/music-master/index.js","./projects/date-countdown":"projects/date-countdown/index.js","./projects/polifactual/client/src":"projects/polifactual/client/src/index.js","./projects/polifactual/client/src/components/Team":"projects/polifactual/client/src/components/Team.js","./components/Header":"components/Header.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./projects/music-master":"projects/music-master/index.js","./projects/date-countdown":"projects/date-countdown/index.js","./projects/polifactual/client/src":"projects/polifactual/client/src/index.js","./projects/polifactual/client/src/components/Team":"projects/polifactual/client/src/components/Team.js","./projects/polifactual/client/src/components/NationalComponent":"projects/polifactual/client/src/components/NationalComponent.js","./components/Header":"components/Header.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
