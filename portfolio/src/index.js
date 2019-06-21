@@ -8,6 +8,7 @@ import MusicMaster from "./projects/music-master";
 import DateCountdown from "./projects/date-countdown";
 import Polifactual from "./projects/polifactual/client/src";
 import PoliTeam from "./projects/polifactual/client/src/components/Team";
+import PoliNational from "./projects/polifactual/client/src/components/NationalComponent";
 import Header from "./components/Header";
 import "./index.css";
 
@@ -60,6 +61,14 @@ ReactDOM.render(
         render={() => (
           <Header>
             <PoliTeam />
+          </Header>
+        )}
+      />
+      <Route
+        path="/National"
+        render={() => (
+          <Header>
+            <PoliNational />
           </Header>
         )}
       />
