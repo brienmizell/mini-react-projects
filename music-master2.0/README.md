@@ -1,3 +1,6 @@
+![alt text](https://raw.githubusercontent.com/brienmizell/portfolio/master/src/images/PictureSearch.png)
+
+
 The Picture Search project is a small web app for the sole purpose
 of reinforceing my learning of react by building an image search
 app.
