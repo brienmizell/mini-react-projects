@@ -1,4 +1,17 @@
-more info to be added soon.
+![alt text](https://raw.githubusercontent.com/brienmizell/portfolio/master/src/images/PictureSearch.png)
+
+The Picture Search project is a small web app for the sole objective
+of reinforcing my knowledge of React by building an image search
+app.
+
+Picture Search is a Front-End web application. It uses Unsplash's
+API to search for an image of any subject matter user enters. It
+renders the top 10 photos in rows using CSS Grid. It takes in the
+height of each photo and adjusts the Grid-row-end, and the
+grid-auto-rows to sure the image gets just as much space as it needs
+to give the images a look and feel that I wanted to accomplish.
+
+
 
 ## Available Scripts
 
