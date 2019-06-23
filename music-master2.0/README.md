@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/brienmizell/portfolio/master/src/images/PictureSearch.png)
+![alt text](https://raw.githubusercontent.com/brienmizell/portfolio/master/src/images/MusicMaster.png)
 
 
 The Picture Search project is a small web app for the sole purpose
