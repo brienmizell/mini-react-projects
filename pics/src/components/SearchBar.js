@@ -19,6 +19,7 @@ class SearchBar extends Component {
               type="text"
               value={this.state.term}
               onChange={e => this.setState({ term: e.target.value })}
+              placeholder="What images would you like to search for?"
             />
           </div>
         </form>
