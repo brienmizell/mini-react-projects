@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import Clock from "./Clock";
-import { Form, FormControl, Button } from "react-bootstrap";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      deadline: "December 25, 2018",
+      deadline: "December 25, 2019",
       newDeadline: ""
     };
   }
@@ -15,22 +14,46 @@ class App extends Component {
   changeDeadline() {
     this.setState({ deadline: this.state.newDeadline });
   }
+  handleKeyPress = event => {
+    if (event.key === "Enter") {
+      this.changeDeadline();
+    }
+  };
 
   render() {
     return (
       <div className="App">
         <div className="App-title">Countdown to {this.state.deadline}</div>
         <Clock deadline={this.state.deadline} />
-        <Form inline>
-          <FormControl
-            className="Deadline-input"
-            placeholder="New Date"
+        <div className="ui form">
+          <div
+            className="field"
             onChange={event =>
               this.setState({ newDeadline: event.target.value })
             }
-          />
-          <Button onClick={() => this.changeDeadline()}>Submit</Button>
-        </Form>
+          >
+            <div className="ui form" style={{ fontSize: "25px" }}>
+              Enter a date:{" "}
+            </div>
+            <div className="ui large action input" style={{ width: "600px" }}>
+              <input
+                type="text"
+                name="date"
+                placeholder="December 25 2019"
+                onChange={event =>
+                  this.setState({ newDeadline: event.target.value })
+                }
+                onKeyPress={this.handleKeyPress}
+              />
+              <div
+                class="ui primary button"
+                onClick={() => this.changeDeadline()}
+              >
+                Submit
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

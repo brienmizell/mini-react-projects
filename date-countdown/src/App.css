@@ -1,18 +1,22 @@
 .App {
   text-align: center;
   font-size: 35px;
-  margin-top: 20%;
+  padding: 20% 0;
 }
 
 .App-title {
   font-size: 50px;
+  padding-bottom: 10px;
+}
+.main-clock {
+  display: flex;
+  justify-content: center;
 }
 
 .Clock-days,
 .Clock-hours,
 .Clock-minutes,
 .Clock-seconds {
-  display: inline;
   margin: 10px;
 }
 
