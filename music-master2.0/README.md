@@ -1,16 +1,16 @@
 ![alt text](https://raw.githubusercontent.com/brienmizell/portfolio/master/src/images/MusicMaster.png)
 
 
-The Picture Search project is a small web app for the sole purpose
-of reinforceing my learning of react by building an image search
-app.
+The Music Master project is a small web app for the sole purpose of
+reinforcing my learning of React by building a functional music
+player.
            
-Picture Seach is a Front-End web application. It uses Unsplash's API
-to search for an image of any subject matter user enters. It renders
-top 10 images in rows using CSS Grid. It takes in the height of
-each image and adjusts the Grid-row-end and the grid-auto-rows to
-sure the image gets just as much space as it needs to give the
-images the look and feel that i wanted to accomplish.
+Music Master is a Front-End web application. It uses Spotify's API
+to search for any artist the user enters in to fetch the artist's
+info (picture, number of followers, and top tracks). It renders the
+songs in rows with their corresponding album art. Once the user
+clicks the song, it will begin to play a 30-second snippet of the
+song chosen, click again to pause.
 
 
 ## Available Scripts
