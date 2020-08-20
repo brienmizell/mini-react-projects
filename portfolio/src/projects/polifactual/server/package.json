@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/hharris0803/Photo_Widget#readme",
   "dependencies": {
-    "bcrypt": "^3.0.3",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "connect-pg-simple": "^5.0.0",
     "dotenv": "^6.2.0",
